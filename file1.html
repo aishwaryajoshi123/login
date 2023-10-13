@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        input:hover{
+            color: blue;
+            background-color: brown;
+        }
+
+        body{
+            background-color: bisque;
+        }
+
+        fieldset{
+            color: brown;
+            background-color: rgb(171, 171, 198);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 2px solid black;
+            width: 40%;
+            border-radius: 1cm;
+            text-align: justify;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="Message.html">
+       <center>
+        <fieldset style="color: black;">
+            <legend style="color:brown"><h1>Personal Details</h1></legend>
+        
+            <label for="sal">Salutation</label> <br>
+            <select name="sal" id="sal">
+                <option value="sal">--None--</option>
+                <option value="sal">Mr.</option>
+                <option value="sal">Mrs.</option>
+                <option value="sal">Dr.</option>
+                <option value="sal">Er.</option>
+            </select>
+            <br><br>
+
+        <label for="1">First Name</label>
+        <input type="text" required id="1" name="1" pattern="[A-Za-z]{3,7}">
+        <br><br>
+
+        <label for="2">Middle Name</label>
+        <input type="text" id="2" name="mname">
+        <br><br> 
+
+        <label for="3">Last Name</label>
+        <input type="text" required id="1" name="1" pattern="[A-Za-z]{3,7}">
+        <br><br>
+
+        <label for="4">Email</label>
+        &nbsp; &nbsp; &nbsp;
+        <input type="email" id="4" name="email">
+        <br><br>
+
+        <label for="2">Contact</label>
+        &nbsp; &nbsp;
+        <input type="text" name="2" id="2" pattern="[6-9]{1}[0-9]{9}">
+        <br><br>
+
+        <label for="5">DOB</label>
+        <input type="date" id="5" name="dob">
+    </fieldset>
+
+    <fieldset style="color: black;">
+        <legend  style="color: brown"><h1>Educational Details</h1></legend>
+
+        <label for="">Department</label>
+        <br><br>
+
+        <input type="radio" name="radio" id="6">
+        <label for="6">CS</label>
+
+        <input type="radio" id="7" name="radio">
+        <label for="7">EC</label>
+
+        <input type="radio" id="8" name="radio">
+        <label for="8">Mech</label>
+        <br><br>
+
+        <label for="yop">YOG</label>
+        <input list="yog" name="yop" id="yop">
+        <datalist id="yog">
+            <option >2019</option>
+            <option >2020</option>
+            <option >2021</option>
+            <option >2022</option>
+            <option >2023</option>
+        </datalist>
+
+        <br><br>
+
+        <label for="">Skills</label>
+        <br><br>
+
+        <input type="radio"  id="66">
+        <label for="66">HTML</label>
+        <br>
+
+        <input type="radio" id="77" >
+        <label for="77">CSS</label>
+        <br>
+
+        <input type="radio" id="88" >
+        <label for="88">Javascript</label>
+
+
+        
+    </fieldset>
+       
+     <br>
+    <input id="sub" type="submit" >
+    </form>
+</center>
+</body>
+</html>
